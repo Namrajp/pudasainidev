@@ -8,6 +8,7 @@ body{
 	font-size: 16px;
 	font-weight: normal;
 	background: #333;
+	color: #ffe;
 }
 .header{
 	display: flex;
