@@ -16,20 +16,96 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="page.html">Page</a></li>
 				<li><a href="blog.html">blog</a></li>
-				<li><a href="contact.html">contact</a></li>
+				<li><a href="vhost.html">vhost</a></li>
+				<li><a href="form.html">contact</a></li>
 			</ul>
 		</div>
 	</div>
-
+<nav class= "container" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="page.html">Page</a></li>
+  </ol>
+</nav>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm">This is column 1</div>
-			<div class="col-sm">This is column 2</div>
-			<div class="col-sm">This is column 3</div>
-			
-		</div>
-		
-	</div>
+			<div class="col-sm">
+				<h1>Manipulating Directories</h1>
+	<h2>Create Parent Directory</h2>
+	<p>Normally,if you try to create a directory inside another directory that doesn't exist, mkdir responds with No such directory or file error. so only way about this bug is specify -p or --parents option with mkdir.</p>
+	<p><img src="images/parents.png" alt=""></p>
+	<h2>Set Mode</h2>
+	<p>The -m mode or --mode=mode option causes the new directory to have the specific permissions.Example in png image below.</p>
+	<div id="dirs">
+		<img src="images/mkdir_mode.png" alt="">
+	<br>
+
+
+	<h1>Command line basics</h1>
+	<p>This is a distro of linux which is neat flavour of commonly used linux.</p>
+	<article>
+	<h2> Examples of some commands used frequently and their usage.</h2>	
+<p><code>$ ps aux | grep -i apt</code><br>This command selects process related to apt program in case insensitive way.
+  </p>
+
+<p><code>  $ sudo kill -9 6974</p><br>
+</code>This command kills process with process Id of 6974 forcefully
+<p><code>  $ sudo killall apt apt-get</p><br>
+</code>This command kills all processes with process associated with apt and apt-get.
+
+<p><code>$ apt search sublime-text</code><br>
+	<code>$ apt-cache search sublime-text</code><br>This searches for sublime-text using apt.
+  </p>
+<p><code>  $ sudo apt update</p>
+</code><br>This updates the apt repository.
+<p><code>$timedatectl status</code><br>This line shows unversal time UTC and GMT time zones.  
+  </p>
+<p>This list section 5 of man page for passwd 
+man 5 passwd </p>
+
+<p>Passwd file is located in /etc/passwd helds info related to User :
+</p>
+<p>
+	avahi:x:116:122:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+colord:x:117:123:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+hplip:x:118:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+geoclue:x:119:124::/var/lib/geoclue:/usr/sbin/nologin
+gnome-initial-setup:x:120:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:121:125:Gnome Display Manager:/var/lib/gdm3:/bin/false
+namraj:x:1000:1000:Namraj,,,:/home/namraj:/bin/bash
+nava:x:1001:1001:Nava,,,:/home/nava:/bin/bash
+_chrony:x:122:126:Chrony daemon,,,:/var/lib/chrony:/usr/sbin/nologin
+mysql:x:123:127:MySQL Server,,,:/nonexistent:/bin/false
+
+</p>
+
+<br>
+
+<h1>Some Commands</h1>
+	<h2>Environment varaiable </h2>
+	<p>Environment varaiable are declared like name=Namraj but when invoked $ sign is required.</p>
+	<img src="images/environmentVar.png" alt="">
+	<h2>Last command</h2>
+	<p>To print last command we can type double exclamation or bang.ie !! and to issue last command typed !command like this.</p>
+	<img src="images/lastCommand.png" alt="">
+	<h2>Pipe</h2>
+	<p>Pipe is used when a output of one command is input to other command.</p>
+	<img src="images/pipe.png" alt="">
+	<h2>Sed</h2>
+	<p>Sed is used to search and replace a string. sed used -ie flag to update file in place where -e is error flag.</p>
+	<img src="images/sed.png" alt="">
+	<h2>Cut</h2>
+	<p>Cut is used to search a string delimited. cut use flag -d followed by delimiter and flag -f followed by number which tell which column to select.</p>
+	<img src="images/cut.png" alt="">
+	<h2>Awk</h2>
+	Awk is used to print a string in a file.It uses {print $n} construct to select a column from a file name which follows.
+	example.
+	<code>history | awk {print $2} </code><br>prints output list of commands in history output.
+	<code>df -h | awk "fnr=2 print{$5}"</code><br> prints 
+	<img src="images/awk" alt="">
+			</div> <!--column-->
+		<div> <!--row-->
+	</div> <!--container-->
 	<script src="js/bootrap.min.js"></script>
 </body>
 </html>

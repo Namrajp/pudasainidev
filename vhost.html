@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="header container">
+		<div class="logo">
+			<a id="logo" href="index.html"><img class="logo" src="images/logo.png" width= 150 height= 40 alt=""></a>
+			
+		</div>
+		<div class="navbar">
+				<ul class="nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="page.html">Page</a></li>
+					<li><a href="blog.html">blog</a></li>
+					<li><a href="vhost.html">vhost</a></li>
+					<li><a href="form.html">contact</a></li>
+				</ul>
+			
+		</div>
+		
+	</div> <!-- header container -->
+
+
+<nav class="container" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Vhosts</a></li>
+  </ol>
+</nav>
+
+<div class="container blog">
+
+<article class="row">
+	<div class="col-sm-8">
+			<h4 id="wordpress-install">To install xampp with wordpress</h4>
+		<p>The process of installing xampp is strainght forward, download and run setup process which even takes not more than five minutes with no customize required.After installing xampp from <a href="https://www.apachefriends.org/download.htmlhttps://www.apachefriends.org
+">Apache friends </a>.It comes with with php7 open 
+		control center and start apache and mysql</p>
+		<li># we need to navigate to hen go to localhost and verify apache running
+		</li>
+		<li># Next delete all files in htdocs folder and download and extract wordpress folder in htdocs</li>
+		<li># go to localhost/wordpress to setup wp , type username root database wordpress or whatever</li>
+		<li># password is empty and localhost next. If this setup dont work then open wp-config-sample file</li>
+		<li># rename to wp-config and type manually db:wordpress user:root password:empty localhost save and 
+		try localhost/wordpress.</li>
+
+	</div>
+
+
+	<div class="col-sm-3">
+		<dl>
+			<h4>Article Categories</h4>
+			<a href="#vhosts">
+				<dt>Virtual Hosts</dt>
+				<a href="#wordpress-install">
+					<dt>Wordpress installation</dt></a>
+			</a>
+			<a href="#snip">
+				<dt>Ubuntu commands Windows 10</dt>
+			</a>
+		</dl>
+	</div> <!-- col-sm-4 -->	
+</article>	
+<hr><br><br>
+
+<article class="row">
+	<div class="col-sm-12">
+		<h4 id="vhosts">Virtual Host setup</h4> <br>
+
+		 <li># There are chances someone working in local host will file websites or Wordpress folder usually htdocs.In PHP, every line that has server configuration files are located inside apache/conf folder. The comments are written in the files start with special symbol called hash (#).First of all httpd-vhosts file location is to be navigated which is  to folder</li> 
+
+		<code>
+			 C:\xampp_new\apache\conf\extra\httpd-vhosts 
+		</code>
+		<li>We need to edit the virtualhost file which looks similar to snippets listed down here,open this file copy <virtualHost> block and edit like :</li><br>
+		<li>
+			#<VirtualHost *:80> <br>
+		    #ServerAdmin webmaster@dummy-host2.example.com<br>
+		    #DocumentRoot "C:/xampp_new/htdocs/dummy-host2.example.com"<br>
+		    #ServerName dummy-host2.example.com<br>
+		    #ErrorLog "logs/dummy-host2.example.com-error.log"<br>
+		    #CustomLog "logs/dummy-host2.example.com-access.log" common<br><br>
+		#</VirtualHost>
+		</li>
+		<li>
+			#<VirtualHost *:80><br>
+		    #ServerAdmin webmaster@dummy-host2.example.com<br>
+		    #DocumentRoot "C:/xampp_new/htdocs/dummy-host2.example.com"<br>
+		    #ServerName dummy-host2.example.com<br>
+		    #ErrorLog "logs/dummy-host2.example.com-error.log"<br>
+		    #CustomLog "logs/dummy-host2.example.com-access.log" common<br>
+		#</VirtualHost><br>
+		</li>
+		<li>
+			<VirtualHost *:80>
+		   DocumentRoot "C:/xampp_new/htdocs/wordpress"<br>
+		   ServerName woocommerce.test<br>		</VirtualHost>
+		</li>
+		<code>C:\Windows\System32\drivers\etc</code>
+		<li>We can only drag file into desktop and edit it there because it is not permitted to edit in system folder. To edit, add line 
+		127.0.0.1 woocommerce.test and drag back to system foldet \etc ,due to permissions to edit there itself.</li>
+		<li># lastly, go to phpmyadmin to select wordpress database and select wp-options
+		# change siteurl and home to http://woocommerce.test</li>
+
+		<h4 id="snip">Ubuntu Home folder in windows subsystem </h4>
+		<p>C:\Users\onesi\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs <br>
+		cd /mnt/c to go to c dir
+		namraj@Namraj-4GZ7:/mnt/c/Users/onesi/Documents$</p>
+
+		</div> <!-- col-sm-12 -->
+	</article>
+
+	<script src="js/bootrap.min.js"></script>
+</body>
+</html>

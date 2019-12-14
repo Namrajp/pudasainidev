@@ -16,39 +16,66 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="page.html">Page</a></li>
 				<li><a href="blog.html">blog</a></li>
+				<li><a href="vhost.html">vhost</a></li>
 				<li><a href="contact.html">contact</a></li>
 			</ul>
 		</div>
 	</div>
-
+<nav class="container" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Blog</a></li>
+  </ol>
+</nav>
 	<div class="container blog">
 		<div class="row">
 			<div class="col-sm-8">
-				<h2>How to Link bootstrap to a website</h2>
+				<article>
+					<h3>How to Link bootstrap to a website</h3>
+					<p><small>15 Novembre 2019</small>&nbsp; &nbsp;Admin</p>
 				<p>In order to link a website to bootstrap you have to download bootstrap first. Then the second step is to link css and javascript file to the project folder.Like as shown below.</p><br><br>
 				<p><img src="images/bootjs.png" alt=""><br><br>And then to link javascript <br><br><img src="images/bootcss.png" alt=""></p>
+					
+				</article>
+
+				<article id="ubuntu">
+					<h3>Command Line in Windows 10</h3>
+					<p><small>15 November 2019</small>&nbsp; &nbsp;Admin</p>
+					<h5>Download Ubuntu</h5>
+					<p>The Windows 10 marketplace has a lot of apps related to various flavour of linux.One of them is Ubuntu. If you are using terminal in ubuntu a lot like me you can download and install ubuntu subsystems from microsoft store.Though, there are OpenSuse and kali linux including other flavours.</p><br>
+					<h5>Using Terminal of Ubuntu in windows subsystem</h5>
+					<p>The first thing to get started is to find the home folder in Ubuntu. The home folder is not located in users home directory as you would expect.The location is nested deep inside $USER dirctory. </p>C:\Users\onesi\AppData\Local\Packages\CanonicalGroupLimited.
+							Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs <br>
+							
+					<p>In order to navigate to C: directory in Windows 10, you need to type 
+						<code>cd /mnt/c</code> <br>
+						Likewise, to navigate to Desktop from C: Drive you have to type
+						<code>cd Users/$USER/Desktop</code><br> -> or pwd to check else to go to Documents <br><code>cd Users/$USER/Documents</code><br>
+						 namraj@Namraj-4GZ7:/mnt/c/Users/onesi/Documents$ pwd</p>
+
+					<h5 id= "screenshot">How to take screen shots</h5>
+
+					<p> In windows 10 taking a screen shot is very similar to ubuntu, the command shortcut to type in the keyboard
+					windows +shift + S.In Ubuntu, the command shortcut to take partial screenshot is shift + Print screen .I have a page if you want to know <a href="keyboardShortcuts">basic keyboard shortcuts on Ubuntu</a>. To open a Terminal in Ubuntu is Ctrl+Alt+T. Knowing a basic list of shortcuts is very helpful, which saves a lot of time while working.
+					</p>	 
+					
+				</article>
+				
 			</div>
 
 			<div class="col-sm-4">
 				<dl>
 					<a href="https://www.lpi.org"><dt>Linux</dt></a>
-					<a href="https://certification.comptia.org › certifications"><dt>Comptia a+</dt></a>
+					<a href="#ubuntu"><dt>Ubuntu subsystem</dt></a>
+					<a href="#screenshot"><dt>Screen capture made easy</dt></a>
+					
 					<a href=""><dt>Scripting and automation</dt></a>
 				</dl>
 			
 			</div>
 		</div>
 
-		<h2>How to take screen shots in windows 10</h2>
-		<p>Taking a screen shot in windwos
-		windows +shift + S
-		https://certification.comptia.org › certifications</p>
-		
-		<h2>Ubuntu Home folder in windows subsystem</h2>
-		<p>C:\Users\onesi\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs
-cd /mnt/c to go to c dir
-namraj@Namraj-4GZ7:/mnt/c/Users/onesi/Documents$</p>
-	</div>
+</div>
 
 	<script src="js/bootrap.min.js"></script>
 </body>

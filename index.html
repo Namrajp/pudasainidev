@@ -9,45 +9,94 @@
 <body>
 	<div class="header container">
 		<div class="logo">
-			<img class="logo" src="images/logo.png" width= 270 height= 50 alt="">
+			<a id="logo" href="index.html"><img class="logo" src="images/logo.png" width= 150 height= 40 alt=""></a>
+			
 		</div>
 		<div class="navbar">
-			<ul class="nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="page.html">Page</a></li>
-				<li><a href="blog.html">blog</a></li>
-				<li><a href="contact.html">contact</a></li>
-			</ul>
+				<ul class="nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="page.html">Page</a></li>
+					<li><a href="blog.html">blog</a></li>
+					<li><a href="vhost.html">vhost</a></li>
+					<li><a href="form.html">contact</a></li>
+				</ul>
+			
 		</div>
+		
 	</div>
 
+
+<nav class="container" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Bootstrap</a></li>
+  </ol>
+</nav>
 	<div class="container blog">
-		<div class="row">
+		<article class="row">
 			<div class="col-sm-8">
 				<h2>How to Link bootstrap to a website</h2>
 				<p>In order to link a website to bootstrap you have to download bootstrap first. Then the second step is to link css and javascript file to the project folder.Like as shown below.</p><br><br>
 				<p><img src="images/bootjs.png" alt=""><br><br>And then to link javascript <br><br><img src="images/bootcss.png" alt=""></p>
 			</div>
-
+			
 			<div class="col-sm-4">
 				<dl>
-					<a href="https://www.lpi.org"><dt>Linux</dt></a>
-					<a href="https://certification.comptia.org › certifications"><dt>Comptia a+</dt></a>
+					<h4>Article Categories</h4>
+					<a href="https://getbootstrap.com/docs/4.3/components/breadcrumb/">
+						<dt>Bootstrap</dt>
+						<a href="#win_bash">
+							<dt>Windows10 Linux subsystem</dt></a>
+					</a>
+					<a href="#screenshot_win10">
+						<dt>Snipping in Windows 10</dt>
+					</a>
+					<br>
+					<h4>Links for learning</h4>
+					<a href="https://www.getbootstrap.com"><dt>Responsive Frameworks</dt></a>
+					<a href="https://learning.lpi.org/en/learning-materials/learning-materials"/>LPI Linux Essentials</a>
+					<a href="https://developers.google.com/web/tools/chrome-devtools/javascript/#reproduce"/> Chrome dev tools debugging</a>
+				
+				<a href="https://learning.lpi.org/en/learning-materials/101-500/">LPIC-1 EXAM 101</a>
+				<a href="https://certification.comptia.org › certifications"><dt>Comptia a+</dt></a>
 					<a href=""><dt>Scripting and automation</dt></a>
+
 				</dl>
+
 			
 			</div>
-		</div>
-
-		<h2>How to take screen shots in windows 10</h2>
-		<p>Taking a screen shot in windwos
-		windows +shift + S
-		https://certification.comptia.org › certifications</p>
 		
-		<h2>Ubuntu Home folder in windows subsystem</h2>
-		<p>C:\Users\onesi\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs
-cd /mnt/c to go to c dir
-namraj@Namraj-4GZ7:/mnt/c/Users/onesi/Documents$</p>
+		<article class="row">
+			<div class="col-sm-8">
+				<a id= "win_bash"><h2>Ubuntu Home folder in windows subsystem</h2></a>
+				<p>In windows 10 you can use ubuntu bash terminal. The installation procedure takes to enable linux sub systems in system configurations. The shell takes many linux commands inside the bash prompt which looks similar to ubuntu terminal prompt.
+				<br><br> The home folder is located nested in users folder as such: <br>
+				<code>
+					C:\Users\onesi\AppData\Local\Packages\CanonicalGroupLimited.
+				Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs
+				</code>
+				
+				<br><br>
+				In order to navigate to hard drive partitions, you need to type:	
+				<blockquote>cd /mnt/c</blockquote>	
+				 
+				<strong>namraj@Namraj-4GZ7: </strong> cd /mnt/c/Users/onesi/Documents$</p>
+			</div>
+			<div class="col-sm-4"></div>
+		</article>
+		<article class="row">
+			<div class="col-sm-8">
+				<a id="screenshot_win10"><h2>How to take a screenshot in Windows 10</h2></a>
+				<p>Taking a screen shot in windwos</p>
+				<p>windows +shift + S</p>
+				
+			</div>
+			
+		</article>
+		</article>		
+				
+		
+		
 	</div>
 
 	<script src="js/bootrap.min.js"></script>

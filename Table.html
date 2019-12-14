@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo of the Table</title>
+	<style>
+		body
+		{
+			font-family: arial;
+			background: #ccc;
+		}
+		table
+		{	
+			font-family: arial, sans-seriff;
+			width: 70%;
+			border-collapse: collapse;
+		}
+		tr:nth-child(even) 
+		{
+			background-color: #ddd;
+		}
+		#container
+		{
+			width: 800px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<table align = "right" style = "border-collapse: collapse;border: 1px solid #ddd;">
+	<tr>
+		<th><a href="table1.html">Home</a></th>
+		<th><a href="payslip.html">Products</a></th>
+		<li><a href="vhost.html">vhost</a></li>
+		<th><a href="form.html">Contacts</a> </th>
+
+	</tr>
+</table>
+	<div id="container">
+		<h1>Name: Namraj Pudasaini</h1>
+		<h2>Address: 14 Barbara Boulevard</h2>
+		<h3>Employee Code: 0921</h3>
+
+		<table cellpadding = "5" cellspacing ="1" width = "500px" border = '1' align="right">
+			<tr align = "center" bgcolor="#ccc">
+				<th>Date</th>
+				<th> Unit hours</th>
+				<th> Gross payment</th>
+
+			</tr>
+			<tr>
+				<td> 22 Sept 2019</td>
+				<td>27.98</td>
+				<td>1900.99</td>
+			</tr>
+			<tr>
+				<td> 22 Oct 2019</td>
+				<td>27.98</td>
+				<td>1900.99</td>
+			</tr>
+			<tr>
+				<td> 22 Nov 2019</td>
+				<td>27.98</td>
+				<td>1900.99</td>
+			</tr>
+			<tr>
+				<td> 22 Dec 2019</td>
+				<td>27.98</td>
+				<td>1900.99</td>
+			<tr>
+				<td>Gross Payments</td>
+				<td colspan="2" align = "center"> Total  Tax : 57.01</td>
+			</tr>
+			<tr>
+				<td>Total: </td>
+				<td colspan="2" align = 'center'> Total Payments after Tax : 1800.21</td>
+			</tr>	
+
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

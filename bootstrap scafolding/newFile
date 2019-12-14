@@ -1,0 +1,31 @@
+
+This command selects process realted to apt program in case insensitive way.
+  $ ps aux | grep -i apt
+
+This command kills process with process Id of 6974 forcefully
+  $ sudo kill -9 6974
+This command kills all processes with process associated with apt and apt-get.
+  $ sudo killall apt apt-get
+
+This searches for sublime-text using apt.
+  $ apt search sublime-text
+This updates the apt repository.
+  $ sudo apt update
+This line shows unversal time UTC and GMT time zones.  
+  $timedatectl status
+This list section 5 of man page for passwd 
+man 5 passwd 
+
+Passwd file is located in /etc/passwd helds info related to User :
+
+avahi:x:116:122:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+colord:x:117:123:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+hplip:x:118:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+geoclue:x:119:124::/var/lib/geoclue:/usr/sbin/nologin
+gnome-initial-setup:x:120:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:121:125:Gnome Display Manager:/var/lib/gdm3:/bin/false
+namraj:x:1000:1000:Namraj,,,:/home/namraj:/bin/bash
+nava:x:1001:1001:Nava,,,:/home/nava:/bin/bash
+_chrony:x:122:126:Chrony daemon,,,:/var/lib/chrony:/usr/sbin/nologin
+mysql:x:123:127:MySQL Server,,,:/nonexistent:/bin/false
+

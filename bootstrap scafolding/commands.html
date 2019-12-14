@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Commands</title>
+</head>
+<body>
+	<h1>Some Commands</h1>
+	<h2>Environment varaiable </h2>
+	<p>Environment varaiable are declared like name=Namraj but when invoked $ sign is required.</p>
+	<img src="images/environmentVar.png" alt="">
+	<h2>Last command</h2>
+	<p>To print last command we can type double exclamation or bang.ie !! and to issue last command typed !command like this.</p>
+	<img src="images/lastCommand.png" alt="">
+	<h2>Pipe</h2>
+	<p>Pipe is used when a output of one command is input to other command.</p>
+	<img src="images/pipe.png" alt="">
+	<h2>Sed</h2>
+	<p>Sed is used to search and replace a string. sed used -ie flag to update file in place where -e is error flag.</p>
+	<img src="images/sed.png" alt="">
+	<h2>Cut</h2>
+	<p>Cut is used to search a string delimited. cut use flag -d followed by delimiter and flag -f followed by number which tell which column to select.</p>
+	<img src="images/cut.png" alt="">
+	<h2>Awk</h2>
+	Awk is used to print a string in a file.It uses {print $n} construct to select a column from a file name which follows.
+	example.
+	<code>history | awk {print $2} </code><br>prints output list of commands in history output.
+	<code>df -h | awk "fnr=2 print{$5}"</code><br> prints 
+	<img src="images/awk" alt="">
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Namraj Roux Academy-Home</title>
+
+    <link href="_/css/bootstrap.css" rel="stylesheet">
+    <link href="_/css/mystyles.css" rel="stylesheet">
+     <style>
+     .navbarNav {
+        display: flex;
+         align-items: right;
+     }
+       .navbar-nav li{
+        display: inline-block;
+        padding: 10px;
+        font-weight: 500;
+        font-size: 20px;
+       }
+       .navbar-nav li a{
+                color: #333;
+        }
+
+     </style> 
+
+  </head>
+  <body id="home">
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Linux Logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">LinuxOS Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Commands</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+ 
+  <div class="jumbotron text-center">
+      <h1>Welcome to CSS Images</h1>
+      <p>CSS is better learnt with practice. The practice is easier and fun with illustrating images with css. The other way to find design is the flicker and follow that. last but not the least is open source projects.</p> 
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <h3>Markdowns in Github</h3>
+          <p>
+            # Debian-Commands-List
+## User commands Basics
+
+ [To Download google Chrome](http://www.google.com/chrome)
+ **Type wget** http://www.google.com/chrome
+
+<u>To Search downloaded files</u> 
+$ apt-cache search google-chrome
+
+#### TO install the Debian Package
+  $ sudo dpkg -i google-chrome-stable_current_amd64.deb 
+ List Processes using ps and grep to select process related to apt command
+ ps aux | grep -i apt 
+ 
+ * To kill multiple processes (using pIds)causing Lock or error and flag -9 to force kill
+ +sudo kill -9 5313 5314 20070
+ 
+ * $I can type <b> lsblk </b> to list disk devices for viewing disk usages and disk free space.
+  + cfdisk to format disk or make disk partitions
+  
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicons-halflings-regular.svg" aria-hidden="true"></span>
+
+          <h3>List of Links</h3>
+          <a href=""><p>OS and file systems</p></a>
+          <a href=""><p>Hardware and applications</p></a>
+          <a href=""><p>Users and Groups</p></a>
+          <a href=""><p>Commands</p></a>
+          <a href=""><p>Scripting</p></a>
+          <a href=""><p>Networking</p></a>
+        </div>
+        
+      </div>
+    </div>
+    <script src="_/js/bootstrap.js"></script>
+    <script src="_/js/myscript.js"></script>
+  </body>
+</html>
